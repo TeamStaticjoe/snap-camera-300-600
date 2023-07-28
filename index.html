@@ -1,6 +1,11 @@
 <!DOCTYPE html>
 <html>
 	<head>
+		<meta name="snap-camera-300-600" content="width=300,height=600" />
+		<script type="text/javascript">
+			var clickTag = "https://www.qualcomm.com/de/snapdragon#camera"
+		</script>
+
 		<style>
 			.sd-camera-300-600 {
 				width: 300px;
@@ -58,7 +63,12 @@
 		<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
 	</head>
 	<body>
-		<div class="sd-camera-300-600" width="300" height="600">
+		<a
+			href="javascript:window.open(window.clickTag)"
+			class="sd-camera-300-600"
+			width="300"
+			height="600"
+		>
 			<img class="top-text" src="assets/camera-300-600-top-text.png" alt="" />
 			<img
 				class="bottom-text"
@@ -75,7 +85,7 @@
 			/>
 			<img class="red-mat" src="assets/camera-300-600-red-mat.png" alt="" />
 			<img class="image" src="assets/camera-300-600-image.jpg" alt="" />
-		</div>
+		</a>
 	</body>
 	<script>
 		const sdCamera300x600Animate = () => {
